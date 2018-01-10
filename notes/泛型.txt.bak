@@ -1,0 +1,17 @@
+Generics
+
+1.能用来解决什么问题
+	在java本身的使用中，主要是为了将运行时错误，提前到编译时错误。
+	如List a = new List(); list.add(1);list.add("2");list.add(Object obj);
+	在取出a集合中的文件的时候，就会强制转换，导致ClassCastException异常。
+	用List<String> b = new ArrayList<String>(); b.add(1);的时候就会报错。减少Bug的出现。
+	java.lang.Iterable<T>;java.lang.Comparable<T> 等许多接口都用上了泛型。
+	本来不确定要什么类型的参数，就通过泛型来确定参数的类型。
+
+2.怎么解决
+
+3.怎么用
+	<T> 就是泛型的表达方式。
+
+
+综上所述，泛型，是一个过滤器，在
